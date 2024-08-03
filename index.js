@@ -49,10 +49,10 @@ const checkSubscription = async (userId) => {
 };
 
 const sendStartMessage = (chatId) => {
-    bot.sendMessage(chatId, `👋 Welcome! Please subscribe to our [updates channel](https://t.me/teraboxvideodownloader) to use this bot.`, {
+    bot.sendMessage(chatId, `👋 Welcome! Please subscribe to our [updates channel](https://t.me/usefulltgbots) to use this bot.`, {
         parse_mode: 'Markdown',
         reply_markup: {
-            inline_keyboard: [[{ text: '🔔 Updates Channel', url: 'https://t.me/teraboxvideodownloader' }]]
+            inline_keyboard: [[{ text: '🔔 Updates Channel', url: 'https://t.me/usefulltgbots' }]]
         }
     });
 };
