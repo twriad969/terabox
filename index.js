@@ -140,7 +140,7 @@ bot.on('message', async (msg) => {
         bot.sendMessage(chatId, `🔄 Processing your link...`).then(sentMessage => {
             const messageId = sentMessage.message_id;
 
-            axios.get(`https://teraboxdownloader.top/api.php?link=${text}`)
+            axios.get(`https://tera.ronok.workers.dev/?link=${text}&apikey=43304387eac4d997c43815b3758cce8cc4a14a99`)
                 .then(response => {
                     const downloadUrl = response.data.url;
 
